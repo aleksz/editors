@@ -1,0 +1,29 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:c="urn:import:ee.ignite.client"
+	xmlns:e="urn:import:com.google.gwt.editor.ui.client">
+
+	<g:HTMLPanel>
+		<g:Label ui:field="errors" />
+		<g:HorizontalPanel>
+			<g:Label>Age:</g:Label>
+			<e:ValueBoxEditorDecorator ui:field='age'>
+				<e:valuebox>
+					<g:IntegerBox />
+				</e:valuebox>
+			</e:ValueBoxEditorDecorator>
+		</g:HorizontalPanel>
+		<g:HorizontalPanel>
+			<g:Label>Name:</g:Label>
+			<g:TextBox ui:field="name" />
+		</g:HorizontalPanel>
+		<g:HorizontalPanel>
+			<g:Label>Manager:</g:Label>
+			<c:PersonListWidget ui:field="manager"/>
+		</g:HorizontalPanel>
+		<c:AddressWidget ui:field="address" />
+		<g:Button ui:field="save">Save</g:Button>
+		<g:Button ui:field="generateManager">Generate manager</g:Button>
+	</g:HTMLPanel>
+</ui:UiBinder>

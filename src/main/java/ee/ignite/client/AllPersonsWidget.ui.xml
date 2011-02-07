@@ -1,0 +1,11 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:c="urn:import:ee.ignite.client"
+	xmlns:e="urn:import:com.google.gwt.editor.ui.client">
+
+    <g:HTMLPanel>
+     	<c:PersonListWidget ui:field="personList"/>
+		<g:Button ui:field="createNewPerson">New person</g:Button>
+    </g:HTMLPanel>
+</ui:UiBinder>
